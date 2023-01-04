@@ -13,9 +13,9 @@ jobs:
     steps: 
       - uses: actions/checkout@v2
 
-      - name: Set Up Python 3.5
+      - name: Set Up Python 3.X
         uses: actions/setup-python@v2
         with:
-          python-version: 3.5
+          python-version: 3.X
       - name: Display Python Version
         run: python -c "import sys; print(sys.version)"
