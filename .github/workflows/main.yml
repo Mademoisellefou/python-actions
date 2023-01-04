@@ -1,0 +1,11 @@
+name: Python Package
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dev dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Test with pytest
+        run: | 
+          pytest -q test.py
