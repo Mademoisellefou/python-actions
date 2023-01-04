@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-
+# part
 jobs:
   build: 
     runs-on: ubuntu-latest
@@ -13,4 +13,4 @@ jobs:
         run: pip install -r requirements-dev.txt
       - name: Test with pytest
         run: | 
-          pytest -q test.py
+          pytest -q test.py 
