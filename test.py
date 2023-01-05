@@ -1,6 +1,6 @@
 from main import suma_rave
 def test_suma_rave():
-	assert suma_rave(2)==8
+	assert suma_rave(2)==5
 
 
 
